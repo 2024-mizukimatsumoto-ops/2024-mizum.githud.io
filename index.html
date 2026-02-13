@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私だけの秘密のおしゃれ | 週末のカフェラテ</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #fdfbfb; /* カフェラテの泡のような白 */
+            color: #4a4a4a;
+            line-height: 1.8;
+        }
+
+        h1, h2 {
+            font-family: "Sawarabi Mincho", serif; /* 明朝体で大人っぽさを演出 */
+            font-weight: 400;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* ヘッダー */
+        header {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(rgba(195, 166, 160, 0.1), rgba(253, 251, 251, 1));
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            color: #8c7b75;
+            letter-spacing: 0.1em;
+        }
+
+        /* メイン画像（イメージ） */
+        .hero-banner {
+            width: 100%;
+            height: 400px;
+            background-color: #eaddd7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::after {
+            content: "Weekend Caffe Latte";
+            font-style: italic;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* セクション共通 */
+        section {
+            margin-bottom: 100px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 1px;
+            background: #c3a6a0;
+            margin: 15px auto;
+        }
+
+        /* 商品紹介（グリッド） */
+        .item-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .item-card {
+            background: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .item-thumb {
+            width: 100%;
+            aspect-ratio: 3/4;
+            background-color: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        /* ボタン（コンバージョン） */
+        .btn {
+            display: inline-block;
+            padding: 15px 50px;
+            background-color: #c3a6a0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0;
+            transition: 0.3s;
+            letter-spacing: 0.1em;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #a68b85;
+        }
+
+        /* インスタセクション */
+        .instagram-box {
+            background-color: #f5f0ee;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>私だけの秘密のおしゃれ</h1>
+            <p>― 週末のカフェラテのように、甘くて少し背伸びした時間を。 ―</p>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        </div>
+
+    <div class="container">
+        <section id="concept">
+            <div class="section-title">
+                <h2>Concept</h2>
+            </div>
+            <p style="text-align: center;">
+                「可愛くいたいけど、子供っぽくなりたくない」<br>
+                そんなあなたのための、自信をくれる特別な一着をセレクトしました。<br>
+                誰にも教えたくない、私だけの秘密のクローゼットへようこそ。
+            </p>
+        </section>
+
+        <section id="items">
+            <div class="section-title">
+                <h2>New Arrival</h2>
+            </div>
+            <div class="item-grid">
+                <div class="item-card">
+                    <div class="item-thumb"></div>
+                    <p>Latte Color Knit</p>
+                    <p>¥4,200</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-thumb"></div>
+                    <p>Adult Ribbon Skirt</p>
+                    <p>¥5,800</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-thumb"></div>
+                    <p>Secret Flare Dress</p>
+                    <p>¥7,200</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#" class="btn">オンラインショップを見る</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="instagram-box">
+        <div class="container">
+            <div class="section-title">
+                <h2>Instagram</h2>
+            </div>
+            <p>最新のトレンドやコーディネートを公開中</p>
+            <a href="#" style="color: #c3a6a0; font-weight: bold;">@secret_fashion_cafe</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Shop Info: 東京都渋谷区... / Open: 11:00 - 20:00</p>
+            <p>&copy; 私だけの秘密のおしゃれ All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

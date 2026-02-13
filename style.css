@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* =========================================
+   基本設定（リセット＆ベース）
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdfbfb; /* カフェラテの泡のようなアイボリー */
+    color: #4a4a4a;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 明朝体：コンセプトを際立たせる */
+h1, h2, .concept-text {
+    font-family: "Sawarabi Mincho", serif;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   ヘッダー（ロゴエリア）
+   ========================================= */
+header {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+header p {
+    font-size: 0.85rem;
+    color: #c3a6a0; /* モカベージュ */
+    font-weight: bold;
+}
+
+/* =========================================
+   メインビジュアル
+   ========================================= */
+.hero-banner {
+    width: 100%;
+    height: 60vh; /* 画面の高さの60% */
+    background-color: #eaddd7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.hero-banner::after {
+    content: "Weekend Caffe Latte";
+    font-size: clamp(2rem, 8vw, 4rem); /* 画面サイズに合わせて自動調整 */
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+/* =========================================
+   セクション共通
+   ========================================= */
+section {
+    margin-bottom: 120px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background-color: #c3a6a0;
+}
+
+/* =========================================
+   商品グリッド（New Arrival）
+   ========================================= */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.item-card {
+    transition: transform 0.4s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px); /* マウスをのせると少し浮く */
+}
+
+.item-thumb {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: #f0edec;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.item-name {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* =========================================
+   ボタン（コンバージョン）
+   ========================================= */
+.btn-wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 60px;
+    background-color: #c3a6a0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+    border: 1px solid #c3a6a0;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #c3a6a0;
+}
+
+/* =========================================
+   SNS / フッター
+   ========================================= */
+.instagram-box {
+    background-color: #f9f6f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+footer p {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
